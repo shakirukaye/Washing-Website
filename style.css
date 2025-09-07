@@ -262,7 +262,7 @@ a {
 .section-heading,
 .product-header {
     padding: 5px;
-    color: #e67c06d9;
+    color: #000000;
     font-size: xx-large;
     margin: 5px 0;
     text-align: center;
@@ -403,7 +403,7 @@ a {
     margin: 10px auto;
     min-width: 50px;
     max-width: 200px;
-    min-height: 300px;
+    min-height: 369px;
 }
 
 .service-button {
@@ -456,6 +456,7 @@ a {
     color: white;
     font-weight: 600;
     background-color: #e67c06d9;
+    width: 200px;
 }
 
 .newsletter-content {
@@ -489,6 +490,7 @@ a {
 
 .newsletter-form-container {
   margin: 0 50px;
+  display: flex;
 }
 
 .newsletter-email {
@@ -547,7 +549,7 @@ h2 {
 }
 
 input, textarea {
-    width: 100%;
+    width: 66%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #e67c06d9;
