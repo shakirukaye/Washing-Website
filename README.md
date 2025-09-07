@@ -59,5 +59,4 @@ The site showcases services, featured products, and includes modals for **search
 
 ---
 
-## 📂 Project Structure
 
