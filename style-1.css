@@ -1,0 +1,136 @@
+@media screen and (max-width: 767px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -320px;
+        top: 127px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #e67c06d9;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        max-width: 320px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .top-bar-element:nth-child(2) {
+        display: none;
+
+    }
+
+    .top-bar {
+        flex-direction: column;
+        /* background-color: #b16eee; */
+    }
+
+    .sale-bar-item-span {
+        font-size: small;
+    }
+
+    .banner {
+        height: 447px;
+        width: 100%;
+        background-position: center top;
+    }
+
+    .banner-text {
+        width: 100%;
+        bottom: 335px;
+        left: 0;
+        font-size: large;
+        text-shadow: 1px 1px #e67c06d9;
+    }
+
+    .product-image-wrap {
+        height: 200px;
+        width: 200px;
+    }
+
+    .page-width {
+        padding: 0 20px;
+    }
+
+    .service-list {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        align-items: center;
+    }
+
+    .sign-up-banner {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+/* @media screen and (min-width: 768px) {
+    .page-width {
+        padding: 0 30px;
+    }
+} */
+
+@media screen and (max-width:320px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner {
+        height: 212px;
+        width: 100%;
+        background-position: center top;
+    }
+
+    .banner-text {
+        width: 100%;
+        bottom: 146px;
+        left: 0px;
+        font-size: medium;
+        text-shadow: 1px 1px #e67c06d9;
+    }
+
+    .partner-info {
+        flex-wrap: wrap;
+    }
+
+    .product-section-content {
+        display: flex;
+        flex-direction: column;
+    }
+}

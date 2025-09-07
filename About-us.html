@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-1.css" />
+    <link rel="stylesheet" href="style-2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+VN:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="contact-no top-bar-element">
+          <a href="#"
+            ><i class="fa-solid fa-phone"></i> <span>(+91)-8652056952</span></a
+          >
+        </div>
+        <div class="discount-ad top-bar-element">
+          <i class="fa-sharp fa-regular fa-percent"></i>
+          <span>Discount applicable on premium purchases</span>
+        </div>
+        <div class="email top-bar-element">
+          <a href="#" class="email"
+            ><i class="fa-solid fa-envelope"></i>
+            <span>ukaye.shakir@gmail.com</span></a
+          >
+        </div>
+      </div>
+      <nav class="nav-bar">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <a href="index.html" class="nav-branding">Star Wash</a>
+        <div class="nav-menu">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About-us.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="header-icons">
+          <li class="header-icon">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#searchModal"
+              ><i class="fa fa-search search-bar"></i
+            ></a>
+          </li>
+          <li class="header-icon">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"
+              ><i class="fa fa-user"></i
+            ></a>
+          </li>
+          <li class="header-icon">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"
+              ><i class="fa fa-cart-shopping"></i
+            ></a>
+          </li>
+        </ul>
+
+        <div
+          class="modal fade"
+          id="searchModal"
+          tabindex="-1"
+          aria-labelledby="searchModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search for products..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="loginModal"
+          tabindex="-1"
+          aria-labelledby="loginModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="emailInput" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailInput"
+                      placeholder="name@example.com"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="passwordInput" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordInput"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Login
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="cartModal"
+          tabindex="-1"
+          aria-labelledby="cartModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>Your cart is currently empty.</p>
+                <!-- You can add a dynamic cart table/list here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="announcement-bar">
+        <div class="announcement-item express-shipping">
+          <span>EXPRESS SHIPPING</span>
+        </div>
+        <div class="announcement-item free-shipping">
+          <span>FREE SHIPPING</span>
+        </div>
+        <div class="announcement-item paypal-payment">
+          <span>PAYPAL PAYMENT</span>
+        </div>
+      </div>
+      <div class="sale-bar">
+        <div class="sale-bar-item">
+          <span class="sale-bar-item-span"
+            >SITEWIDE SALE STARTS FROM 30th JAN 2025</span
+          >
+        </div>
+        <div class="timer">
+          <p id="demo" class="demo"></p>
+        </div>
+      </div>
+    </header>
+
+    <section class="partner-info-banner page-width">
+      <div class="partner-info-text">
+        <h2 class="section-heading">Our Partners</h2>
+      </div>
+      <div class="partner-info">
+        <div class="partner-info-logo-1"></div>
+        <div class="partner-info-logo-2"></div>
+        <div class="partner-info-logo-3"></div>
+        <div class="partner-info-logo-4"></div>
+        <div class="partner-info-logo-5"></div>
+        <div class="partner-info-logo-6"></div>
+      </div>
+    </section>
+    <section class="customer-reviews">
+      <div class="product-heading-div">
+        <h2 class="product-header">Customer Reviews</h2>
+      </div>
+
+      <div class="product-section-content">
+        <div class="product-section custom-review-class">
+          <h3 class="product-heading">Car Wash</h3>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p class="product-description">
+            "Full Internal & External cleaning is done"
+          </p>
+        </div>
+        <div class="product-section custom-review-class">
+          <h3 class="product-heading">Truck Wash</h3>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p class="product-description">
+            "Full Internal & External cleaning is done"
+          </p>
+        </div>
+        <div class="product-section custom-review-class">
+          <h3 class="product-heading">Bike Wash</h3>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p class="product-description">
+            "Full Internal & External cleaning is done"
+          </p>
+        </div>
+        <div class="product-section custom-review-class">
+          <h3 class="product-heading">Cycle Wash</h3>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p class="product-description">
+            "Full Internal & External cleaning is done"
+          </p>
+        </div>
+        <div class="product-section custom-review-class">
+          <h3 class="product-heading">Interior ASMR</h3>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="product-description">
+            Full Internal & External ASMR is done
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <section class="newsletter">
+        <div class="sign-up-banner">
+          <div class="product-heading-div">
+            <h2 class="product-header">Newsletter</h2>
+          </div>
+          <div class="sign-up-newsletter">
+            <p class="sign-up-text">
+              Sign up to get exclusive updates on our products
+            </p>
+            <form action="#" class="newletter-form" id="sign-up-form">
+              <div class="newsletter-form-container">
+                <input
+                  type="email"
+                  class="newsletter-email"
+                  placeholder="Enter email"
+                  id="email-input"
+                />
+                <button type="submit" class="sign-up-btn">Signup</button>
+              </div>
+              <p class="error-message"></p>
+              <!-- Error message -->
+              <p class="sign-up-success"></p>
+            </form>
+          </div>
+        </div>
+
+        <div class="newsletter-content-main">
+          <div class="newsletter-content">
+            <div class="newsletter-content-box">
+              <p class="newsletter-content-text">
+                A vehicle wash is a place or process that cleans the exterior
+                and sometimes the interior of a vehicle.
+              </p>
+            </div>
+          </div>
+          <div class="newsletter-content">
+            <div class="newsletter-content-box">
+              <p class="newsletter-content-text">
+                A vehicle wash is a place or process that cleans the exterior
+                and sometimes the interior of a vehicle.
+              </p>
+            </div>
+          </div>
+          <div class="newsletter-content">
+            <div class="newsletter-content-box">
+              <p class="newsletter-content-text">
+                A vehicle wash is a place or process that cleans the exterior
+                and sometimes the interior of a vehicle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

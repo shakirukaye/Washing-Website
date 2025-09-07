@@ -1,0 +1,20 @@
+@keyframes trans-1 {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: whitesmoke;
+    }
+}
+
+
+@keyframes trans-2 {
+    from {
+        color: black;
+    }
+
+    to {
+        color: red;
+    }
+}

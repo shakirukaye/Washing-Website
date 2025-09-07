@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-1.css" />
+    <link rel="stylesheet" href="style-2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+VN:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="contact-no top-bar-element">
+          <a href="#"
+            ><i class="fa-solid fa-phone"></i> <span>(+91)-8652056952</span></a
+          >
+        </div>
+        <div class="discount-ad top-bar-element">
+          <i class="fa-sharp fa-regular fa-percent"></i>
+          <span>Discount applicable on premium purchases</span>
+        </div>
+        <div class="email top-bar-element">
+          <a href="#" class="email"
+            ><i class="fa-solid fa-envelope"></i>
+            <span>ukaye.shakir@gmail.com</span></a
+          >
+        </div>
+      </div>
+      <nav class="nav-bar">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <a href="index.html" class="nav-branding">Star Wash</a>
+        <div class="nav-menu">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About-us.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="header-icons">
+          <li class="header-icon">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#searchModal"
+              ><i class="fa fa-search search-bar"></i
+            ></a>
+          </li>
+          <li class="header-icon">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"
+              ><i class="fa fa-user"></i
+            ></a>
+          </li>
+          <li class="header-icon">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"
+              ><i class="fa fa-cart-shopping"></i
+            ></a>
+          </li>
+        </ul>
+
+        <div
+          class="modal fade"
+          id="searchModal"
+          tabindex="-1"
+          aria-labelledby="searchModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search for products..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="loginModal"
+          tabindex="-1"
+          aria-labelledby="loginModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="emailInput" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailInput"
+                      placeholder="name@example.com"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="passwordInput" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordInput"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Login
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="cartModal"
+          tabindex="-1"
+          aria-labelledby="cartModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>Your cart is currently empty.</p>
+                <!-- You can add a dynamic cart table/list here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="announcement-bar">
+        <div class="announcement-item express-shipping">
+          <span>EXPRESS SHIPPING</span>
+        </div>
+        <div class="announcement-item free-shipping">
+          <span>FREE SHIPPING</span>
+        </div>
+        <div class="announcement-item paypal-payment">
+          <span>PAYPAL PAYMENT</span>
+        </div>
+      </div>
+      <div class="sale-bar">
+        <div class="sale-bar-item">
+          <span class="sale-bar-item-span"
+            >SITEWIDE SALE STARTS FROM 30th JAN 2025</span
+          >
+        </div>
+        <div class="timer">
+          <p id="demo" class="demo"></p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="banner-img">
+          <div class="overlay-text">
+            <p class="banner-text">
+              THIS IS MY WEBSITE, COME VISIT. I have learnt Html, Css,
+              JavaScript, mySql & any server-side language
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="product-section-main page-width">
+        <div class="product-heading-div">
+          <h2 class="product-header">Our Featured Products</h2>
+        </div>
+        <div class="product-section-content">
+          <div class="product-section">
+            <div class="product-image-wrap">
+              <img src="proj_data/car.jpg" alt="#" class="product-image" />
+            </div>
+            <h3 class="product-heading">Car Wash</h3>
+            <p class="product-description">
+              Full Internal & External cleaning is done
+            </p>
+          </div>
+          <div class="product-section">
+            <div class="product-image-wrap">
+              <img src="proj_data/truck-2.jpg" alt="#" class="product-image" />
+            </div>
+            <h3 class="product-heading">Truck Wash</h3>
+            <p class="product-description">
+              Full Internal & External cleaning is done
+            </p>
+          </div>
+          <div class="product-section">
+            <div class="product-image-wrap">
+              <img src="proj_data/cycle.jpg" alt="#" class="product-image" />
+            </div>
+            <h3 class="product-heading">Cycle Wash</h3>
+            <p class="product-description">
+              Full Internal & External cleaning is done
+            </p>
+          </div>
+          <div class="product-section">
+            <div class="product-image-wrap">
+              <img src="proj_data/car-asmr.jpg" alt="#" class="product-image" />
+            </div>
+            <h3 class="product-heading">Interior ASMR</h3>
+            <p class="product-description">
+              Full Internal & External ASMR is done
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,579 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #333; */
+}
+
+.nav-item {
+    list-style: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    padding: 0 24px;
+
+}
+
+.nav-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.nav-branding {
+    font-size: 2rem;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.header-icons li {
+    list-style: none;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-no .email {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.top-bar {
+    background-color: #e67c06d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* margin-right: 5px; */
+    color: white;
+}
+
+.top-bar a {
+    color: white;
+}
+
+.announcement-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #e67c06d9;
+    color: white;
+}
+
+.announcement-item {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid white;
+    padding: 15px 0;
+}
+
+.announcement-bar:last-child {
+    border: 0;
+}
+
+/* The element to apply the animation to */
+.sale-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    animation-name: trans-1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.sale-bar-item-span {
+    font-size: xx-large;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: xx-large;
+    animation-name: trans-1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.countdown-text {
+    margin-right: 10px;
+}
+
+#demo {
+    animation-name: trans-2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.banner {
+    height: 682px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    background-image: url('proj_data/car-wash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 64%;
+    left: 0%;
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 4px 2px #e67c06d9;
+}
+
+.banner-img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #000;
+    opacity: 0.4;
+}
+
+.partner-info {
+    /* height: 100px; */
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+
+.partner-info-logo-1 {
+    background-image: url("proj_data/GM-modular.png");
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.partner-info-logo-2 {
+    background-image: url("proj_data/smiths-detection-logo.jpg");
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.partner-info-logo-3 {
+    background-image: url("proj_data/google-logo.webp");
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.partner-info-logo-4 {
+    background-image: url("proj_data/yahoo-logo.jpg");
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.partner-info-logo-5 {
+    background-image: url("proj_data/Chevrolet-Logo.jpg");
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.partner-info-logo-6 {
+    background-image: url("proj_data/audi-logo.jpg");
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.section-heading,
+.product-header {
+    padding: 5px;
+    color: #e67c06d9;
+    font-size: xx-large;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.partner-info-banner {
+    margin: 10px 0;
+}
+
+.page-width {
+    max-width: 100%;
+    margin: 60px auto;
+}
+
+.product-section-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    /* height: 700px; */
+}
+
+.product-heading,
+.service-header {
+    padding: 10px;
+    color: #e67c06d9;
+    /* font-size: medium; */
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.product-description {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-image-wrap {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.checked {
+    color: orange;
+    /* text-align: center; */
+}
+
+.star-rating {
+    margin: 5px auto;
+    text-align: center;
+}
+
+.custom-review-class {
+    border: 1px dotted #e67c06d9;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px 0;
+    max-width: 200px;
+}
+
+.services-reviews {
+    background-color: #0c3986;
+    padding: 40px 0 !important;
+    margin-bottom: 0;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-logo-div {
+    height: 100px;
+    width: 160px;
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 13px;
+}
+
+.cycle-logo {
+    background-image: url("proj_data/cycle-logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scooter-logo {
+    background-image: url("proj_data/scooter-logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bike-logo {
+    background-image: url("proj_data/bike-logo.png");
+    background-size: 162px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.car-logo {
+    background-image: url("proj_data/car-logo-1.jpg");
+    background-size: 159px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.truck-logo {
+    background-image: url("proj_data/truck-logo.jpg");
+    background-size: 159px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.asmr-logo {
+    background-image: url("proj_data/asmr.webp");
+    background-size: 159px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    min-width: 50px;
+    max-width: 200px;
+    min-height: 300px;
+}
+
+.service-button {
+    background-color: #e67c06d9;
+    border: none;
+    color: white;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.service-content {
+    margin: 10px auto;
+}
+
+.services-reviews .product-header {
+    color: white;
+}
+
+.service-content {
+    min-height: 50px;
+}
+
+.sign-up-banner {
+    background-color: #e67c06d9;
+    padding: 30px 0;
+}
+
+.sign-up-text {
+    padding: 10px;
+    text-align: center;
+}
+
+/* .sign-up-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+} */
+
+.sign-up-btn {
+    padding: 12px 15px;
+    border: 1px solid black;
+    margin-left: -5px;
+    color: white;
+    font-weight: 600;
+    background-color: #e67c06d9;
+}
+
+.newsletter-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px;
+
+}
+
+.newsletter-content-box {
+    width: 250px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.newsletter-content-text {
+    padding: 10px;
+
+}
+
+.newsletter-content-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #0c3986;
+}
+
+.newsletter-form-container {
+  margin: 0 50px;
+}
+
+.newsletter-email {
+    padding: 12px 15px;
+}
+.error-message{
+    color: rgb(255, 0, 76); 
+    margin-top: 5px;
+    /* text-align: center;   */
+    font-weight: bold; 
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+}
+
+.sign-up-success {
+    color: green !important;
+    margin: 0 20px;
+    text-align: center;
+}
+/* contact us css */
+
+.container {
+    display: flex;
+    /* width: 800px; */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    align-items: center;
+    justify-content:end;
+}
+
+.contact-form {
+    /* width: 50%; */
+    padding: 30px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.contact-info {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-info span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e67c06d9;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #e67c06d9;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e67c06d9;
+}
+
